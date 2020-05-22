@@ -12,19 +12,21 @@
 itemCost = float(input("Total: "))
 amountTendered = float(input("Tendered: "))
 
-#
+# Calculates who much the customer gets back
 changeDue = amountTendered - itemCost
 
-
+# Prints total change due
 print("Change Back: ", changeDue)
 
-x = float(input("Please enter an amount of cents due: "))
+# Calls up denomination devision using cents as int
+x = float(input("Please enter an amount of cents due as whole number: "))
 x = float(x)
 q = 25
 d = 10
 n = 5
 p = 1
 
+# Calculates cents back
 numberQ = x/q
 numberQ = int(numberQ)
 
@@ -41,6 +43,8 @@ money4 = money3 - (numberP * p)
 numberP = money4/p
 money4 = x - (numberP * p)
 numberP = int(numberP)
+
+#Prints out what change is needed
 
 print (numberQ, " Quarters")
 print (numberD, " Dimes")
