@@ -19,7 +19,7 @@ changeDue = amountTendered - itemCost
 print("Change Back: ", changeDue)
 
 # Calls up denomination devision using cents as int
-x = float(input("Please enter an amount of cents due as whole number: "))
+x = float(input("Please enter the amount of cents due as whole number: "))
 x = float(x)
 q = 25
 d = 10
