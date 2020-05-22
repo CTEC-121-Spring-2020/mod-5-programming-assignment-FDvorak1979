@@ -2,9 +2,9 @@
 #   Programming Assignment 5
 #       Prob-3.py
 
-# <YOUR NAME>
+# Frank Dvorak
 
-# IPO
+# Paint job cost calculator.  Calcluates how much it would cost for paint and labor needed for a job.
 
 # function definition
 
