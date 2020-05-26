@@ -53,6 +53,6 @@ print (numberP, " Pemnies")
 
 
 
-# main function definition
+#outputs money back and exact cents due in coins
 
 
