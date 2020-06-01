@@ -27,7 +27,7 @@ def main():
     print("Hours of labor needed is: ", hoursoflabor)
     print("Cost of paint is: ")
     print("Cost of labor is: ", laborcost, " @ $50.00 /hr with", hoursoflabor, " needed")
-    print("One time setup fee is: ")
+    print("One time setup fee is: ", setupfee)
     print('')
     print("Total Cost is: ", totalcost)
    
