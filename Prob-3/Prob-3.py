@@ -10,26 +10,27 @@
 
 
 # main function definition 
+def paintEstimator(sizeSqFeet, costPerGallon):
+    # Calculations
+    gallons = int(sizeSqFeet / 112 + 1)
+    laborHours = (sizeSqFeet / 112) * 8
+    costPaint =  gallons * costPerGallon
+    totalLabor = laborHours * 35 + 99
+    totalJobCost = costPaint + totalLabor
 
+    #Print estimate
+    print("Size of Job: ", sizeSqFeet, "suqare feet")
+    print("Paint: ", gallons, "gallons at", costPerGallon, "per gallon\t\t\t${0:.2f}".format(costPaint))
+    print("Labor: {0:.1f} hours at 35.00 per hours plus $99.00 setup\t${1:.2f}".format(laborHours, totalLabor))
+    print("_______________________________________________________________________")
+    print("Total:\t\t\t\t\t\t\t${0:.2f}".format(totalJobCost))
+
+
+    
+# main function definition
 def main():
-    hightOfwall = (input("High of wall in feet: "))
-    widthOfwall = (input("Width of wall in feet: "))
-    areatobepainted = hightOfwall * widthOfwall
-    gallonsofpaintneeded = areatobepainted / 112
-    hoursoflabor = gallonsofpaintneeded * 8
-    laborcost = hoursoflabor * 50.00
-    costofpaint = gallonsofpaintneeded * 9.84
-    setupfee = 99.0
-    totalcost = costofpaint + stupfee + laborcost
-
-
-    paint("Gallons of paint needed is: ", gallonsofpaint)
-    print("Hours of labor needed is: ", hoursoflabor)
-    print("Cost of paint is: ")
-    print("Cost of labor is: ", laborcost, " @ $50.00 /hr with", hoursoflabor, " needed")
-    print("One time setup fee is: ", setupfee)
-    print('')
-    print("Total Cost is: ", totalcost)
-   
-# Call the main function.
+    size = eval(input("Enter the size of the job in square feet: "))
+    paintCost = eval(input("Enter the cost of paint per gallon: "))
+    paintEstimator(size, paintCost)
+    
 main()
